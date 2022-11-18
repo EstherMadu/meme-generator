@@ -12,6 +12,15 @@ main {
   padding: 36px;
 }
 
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -20,10 +29,11 @@ main {
   color: white;
   padding: 20px;
   width: 100%;
+  overflow-y: hidden;
 }
 
 .header--image {
-  height: 100%;
+  width: 60px;
   margin-right: 6px;
 }
 
@@ -33,10 +43,14 @@ main {
 }
 
 .form {
+  margin-bottom: 16px;
+}
+
+.form .inputs {
   display: grid;
-  grid-template: 40px 40px / 1fr 1fr;
-  gap: 17px;
-  margin-bottom: 17px;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
 .form--input {
@@ -44,6 +58,8 @@ main {
   border-radius: 5px;
   border: 1px solid #d5d4d8;
   text-indent: 5px;
+  padding: 0.7rem 0.8rem;
+  width: 100%;
 }
 
 .form--button {
@@ -54,16 +70,44 @@ main {
   color: white;
   border: none;
   cursor: pointer;
+  padding: 0.7rem 0.8rem;
+  width: 100%;
 }
-
 .meme {
   position: relative;
-
-  border: 1px solid black;
 }
 
-.meme--image {
-  /* max-width: 100%; */
+.meme-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 700px) {
+  .meme-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Still there?.... */
+/* Yes o lol, I am trying to keep up */
+/* Sorry lol, I added a container and a wrapper (.meme-wrap) Y es I saw them it looks a lot lot better*/
+/* Okay, it's just basic things sha, I think you can just go over them and see what's going on */
+/* Container is also a conventional thing and a good practice, coz some screen can be really wide so the container will make sure it doesn't stretch  
+ahhh I see theres still so much to learn
+Yesssssssss, but you're making good progress 
+👍🏽Coming from a senior dev thank you, I go try go over the code and see what exactly happened int the container I see on web tey share column and on mobile it s*/
+/* Yea the meme-wrap is a grid container and it just puts them into 2 columns, same with the inputs except theres a media query that changes..
+..it back to 1 column */
+/* Okay but tailwind should help make it a lot easy right? */
+/* Absolutely yes */
+/* Welldone. */
+/* Thank you Jude, If I have another issue I will reach out 😄 */
+/* Anytime */
+/* I'll leave you to it now  alright*/
+.meme-image {
+  width: 100%;
   border-radius: 3px;
 }
 
