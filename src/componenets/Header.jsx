@@ -6,9 +6,9 @@ function Header() {
       <img
         src="/images/troll-face.png"
         alt="troll-face"
-        className="header-image"
+        className="header--image"
       />
-      <h2 className="header-text">Meme Generator</h2>
+      <h2 className="header--title">Meme Generator</h2>
     </header>
   );
 }
